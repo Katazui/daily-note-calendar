@@ -1,8 +1,8 @@
-import {NameBuilder} from 'src/business/contracts/name-builder';
-import {DateParser} from 'src/infrastructure/contracts/date-parser';
-import {Period} from 'src/domain/models/period.model';
-import {DateParserFactory} from 'src/infrastructure/contracts/date-parser-factory';
-import 'src/extensions/extensions';
+import { NameBuilder } from "src/business/contracts/name-builder";
+import { DateParser } from "src/infrastructure/contracts/date-parser";
+import { Period } from "src/domain/models/period.model";
+import { DateParserFactory } from "src/infrastructure/contracts/date-parser-factory";
+import "src/extensions/extensions";
 
 export class PeriodNameBuilder implements NameBuilder<Period> {
   private readonly dateParser: DateParser;
